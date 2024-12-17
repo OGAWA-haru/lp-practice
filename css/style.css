@@ -34,6 +34,11 @@ i {
   color: #fff;
 }
 
+.contact a:hover {
+  color: #333;
+  transition: 0.3s;
+}
+
 .keyvisual {
   display: inline-block;
   padding-top: 400px;
@@ -106,6 +111,14 @@ div.skills_inner img {
   margin-top: 100px;
 }
 
+.sk_img {
+  opacity: 0.7;
+}
+
+.sk_img:hover {
+  opacity: 1.0;
+}
+
 .plan {
   background: #d0dfea;
   padding: 50px 0 ;
@@ -157,12 +170,17 @@ h3 {
   justify-content: center;
 }
 
-.sns_inner li {
+.sns_inner i {
   margin: 50 0;
   width: 185px;
   color: #8c8c8c;
   overflow: hidden;
   font-size: 40px;
+}
+
+.sns_inner i:hover {
+  color: #fff;
+  transition: 0.5s;
 }
 
 .footer {
