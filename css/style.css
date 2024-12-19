@@ -16,7 +16,9 @@ i {
 .header {
   background: #fff;
   position: sticky;
-  padding: 15px;
+  top: 0;
+  padding: 15px 0;
+  z-index:10
 }
 
 .inner {
@@ -40,14 +42,15 @@ i {
 }
 
 .keyvisual {
-  display: inline-block;
-  padding-top: 400px;
-  padding-bottom: 400px;
-}
-
-.background_image {
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 400px 0;
   background-image: url(../img/keyvisual/keyvisual.jpg) ;
-  background-size:cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
 }
 
 .main_title {
@@ -55,13 +58,13 @@ i {
   font-weight: 700;
   color: #6ba7eb;
   white-space: nowrap;
+  margin-bottom: 30px;
 }
 
 .sub_title {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
-  margin-top: 30px;
 }
 
 .work {
@@ -117,6 +120,7 @@ div.skills_inner img {
 
 .sk_img:hover {
   opacity: 1.0;
+  transition: 0.7s;
 }
 
 .plan {
@@ -144,7 +148,7 @@ th[scope='col'] {
 }
 
 .cell--table tr {
-  background: #f9f9d9;
+  background: #f9f9f9;
 }
 
 .cell--table tr:nth-child(even) {
@@ -194,6 +198,6 @@ h3 {
   letter-spacing: 0.5px;
 }
 
-.footer,.cell--table,.background_image {
+.header,.footer,.cell--table,.background_image {
   width: 100%;
 }
