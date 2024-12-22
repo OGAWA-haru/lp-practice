@@ -34,6 +34,7 @@ i {
 
 .contact a {
   color: #fff;
+  transition: 0.3s;
 }
 
 .contact a:hover {
@@ -106,7 +107,7 @@ div.skills_inner img {
   flex-wrap: wrap;
 }
 
-.skills_content :not(:nth-child(1),:nth-child(4)) {
+.skills_content :not(:nth-child(3n-2)) {
   margin-left: 100px;
 }
 
@@ -116,6 +117,7 @@ div.skills_inner img {
 
 .sk_img {
   opacity: 0.7;
+  transition: 0.7s;
 }
 
 .sk_img:hover {
@@ -161,8 +163,11 @@ h3 {
 }
 
 .sns {
-  background: #e3f2fd;
   padding: 200px;
+}
+
+.sns, .sns_inner i {
+  background: #e3f2fd;
 }
 
 .sns_inner,.cell--table td,.plan,.skills,.work_inner,.title,.img_pc {
@@ -172,18 +177,20 @@ h3 {
 .is_flex_a {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .sns_inner i {
-  margin: 50 0;
+  padding: 25px 0;
   width: 185px;
   color: #8c8c8c;
   overflow: hidden;
   font-size: 40px;
+  transition: 0.5s;
 }
 
 .sns_inner i:hover {
-  color: #fff;
+  background-color: #fff;
   transition: 0.5s;
 }
 
