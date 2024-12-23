@@ -21,15 +21,23 @@
   aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
   sint -->
       <header class="header">
-        <div class="inner nav_content is_flex">
+        <div class="inner is_flex">
           <div class="logo">
             <a href="#"><i class="fas fa-solid fa-archway fa-2x"></i></a>
           </div>
-            <nav>
+          <div>
+            <!--ハンバーガーメニューの表示・非表示-->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <!--ハンバーガーのアイコン-->
+            <label for="drawer_input" class="drawer_open">
+              <span></span>
+            </label>
+            <nav class="nav_content">
               <ul class="contact">
                 <li><a href="#">Contact</a></li>
               </ul>
             </nav>
+          </div>
         </div>
       </header>
       <main>
@@ -130,7 +138,7 @@
         <section class="sns">
           <div class="inner">
             <nav>
-              <ul class="sns_inner is_flex_a">
+              <ul class="sns_inner is_flex_b">
                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
