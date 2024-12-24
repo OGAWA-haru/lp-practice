@@ -63,18 +63,20 @@ i {
 }
 
 .main_title {
-  font-size: 65px;
+  font-size: clamp(40px, 65 / 1100 * 100vw, 65px);
   font-weight: 700;
   color: #6ba7eb;
   white-space: nowrap;
   margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .sub_title {
-  font-size: 40px;
+  font-size: clamp(30px, 40 / 1100 * 100vw, 40px);
   font-weight: 700;
   color: #fff;
   white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .work {
@@ -316,7 +318,7 @@ h3 {
     transition: 0.3s;
   }
 
-  .nav_content, .sns_inner i {
+  .nav_content, .sns_inner i,.keyvisual {
     width: 100%;
   }
 
@@ -329,11 +331,11 @@ h3 {
   }
 
   .main_title {
-    font-size: 40px;
+    font-size: clamp(0px, 65 / 1100 * 100vw, 40px);
   }
 
   .sub_title{
-    font-size: 30px;
+    font-size: clamp(0px, 40 / 1100 * 100vw, 30px);
   }
 
   .cell--table th:not(:first-child), .cell--table th:first-child {
