@@ -190,7 +190,7 @@ h3 {
 }
 
 .sns {
-  padding: 200px;
+  padding: 200px 0;
 }
 
 .sns, .sns_inner i {
@@ -360,7 +360,7 @@ ul,.sns_inner,.cell--table td,.plan,.skills,.work_inner,.title,.img_pc {
   }
 
   .sns {
-    padding: 50px 0;
+    padding: 50px 15px;
   }
 
   .sns_inner i {
