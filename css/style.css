@@ -8,6 +8,11 @@ i {
   color: #777;
 }
 
+.skills ul {
+  font-size:0;
+  line-height:0;
+}
+
 .is_flex {
   display: flex;
   justify-content: space-between;
@@ -130,7 +135,7 @@ div.skills_inner img {
   margin-top: 100px;
 }
 
-.is_flex_a::after {
+.skills_content::after {
   display: block;
   content:"";
   width: 300px;
@@ -192,14 +197,21 @@ h3 {
   background: #e3f2fd;
 }
 
-.sns_inner,.cell--table td,.plan,.skills,.work_inner,.title,.img_pc {
+ul,.sns_inner,.cell--table td,.plan,.skills,.work_inner,.title,.img_pc {
   text-align: center;
 }
 
 .is_flex_a, .is_flex_b {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+}
+
+.is_flex_a {
+  justify-content: flex-start;
+}
+
+.is_flex_b {
+  justify-content: center;
 }
 
 .sns_inner i {
@@ -348,7 +360,7 @@ h3 {
   }
 
   .sns {
-    padding: 50px 15px;
+    padding: 50px 0;
   }
 
   .sns_inner i {
