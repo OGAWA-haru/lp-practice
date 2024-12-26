@@ -65,7 +65,6 @@ i {
 
 .keyvisual {
   display: block;
-  -moz-box-sizing: border-box;
   padding: 400px 0;
   background-image: url(../img/keyvisual/keyvisual.jpg) ;
   background-position: center;
