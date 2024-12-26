@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -13,8 +17,12 @@ i {
   line-height:0;
 }
 
-.is_flex {
+.is_flex, .d-center, .d-start {
   display: flex;
+  flex-direction: row;
+}
+
+.is_flex {
   justify-content: space-between;
 }
 
@@ -57,13 +65,13 @@ i {
 
 .keyvisual {
   display: block;
-  box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 400px 0;
   background-image: url(../img/keyvisual/keyvisual.jpg) ;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   height: auto;
 }
 
@@ -73,7 +81,6 @@ i {
   color: #6ba7eb;
   white-space: nowrap;
   margin-bottom: 30px;
-  box-sizing: border-box;
 }
 
 .sub_title {
@@ -81,7 +88,6 @@ i {
   font-weight: 700;
   color: #fff;
   white-space: nowrap;
-  box-sizing: border-box;
 }
 
 .work {
@@ -193,28 +199,25 @@ h3 {
   padding: 200px 0;
 }
 
-.sns, .sns_inner i {
+.sns, .sns_inner li {
   background: #e3f2fd;
 }
 
-ul,.sns_inner,.cell--table td,.plan,.skills,.work_inner,.title,.img_pc {
+ul,.sns_inne,.cell--table td,.plan,h3,.skills_content li,.work_inner,.title,.img_pc {
   text-align: center;
 }
 
-.is_flex_a, .is_flex_b {
-  display: flex;
+.d-start {
   flex-wrap: wrap;
-}
-
-.is_flex_a {
   justify-content: flex-start;
 }
 
-.is_flex_b {
+.d-center {
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
-.sns_inner i {
+.sns_inner li {
   padding: 25px 0;
   width: 185px;
   color: #8c8c8c;
@@ -223,7 +226,7 @@ ul,.sns_inner,.cell--table td,.plan,.skills,.work_inner,.title,.img_pc {
   transition: 0.5s;
 }
 
-.sns_inner i:hover {
+.sns_inner li:hover {
   background-color: #fff;
   transition: 0.5s;
 }
@@ -261,7 +264,7 @@ ul,.sns_inner,.cell--table td,.plan,.skills,.work_inner,.title,.img_pc {
     padding: 50px 0;
   }
 
-  .is_flex_a {
+  .d-start {
     display: block;
   }
 
@@ -330,7 +333,7 @@ ul,.sns_inner,.cell--table td,.plan,.skills,.work_inner,.title,.img_pc {
     transition: 0.3s;
   }
 
-  .nav_content, .sns_inner i,.keyvisual {
+  .nav_content, .sns_inner li,.keyvisual {
     width: 100%;
   }
 
@@ -363,12 +366,19 @@ ul,.sns_inner,.cell--table td,.plan,.skills,.work_inner,.title,.img_pc {
     padding: 50px 15px;
   }
 
-  .sns_inner i {
+  .sns_inner li {
     padding: 50px 0;
   }
 
-  .is_flex_b {
+  .d-center {
     display: block;
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-all;
   }
 
 }
