@@ -17,13 +17,23 @@ i {
   line-height:0;
 }
 
-.is_flex, .d-center, .d-start {
+.is_flex {
   display: flex;
   flex-direction: row;
 }
 
-.is_flex {
+.d-between {
   justify-content: space-between;
+}
+
+.d-start {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.d-center {
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .header {
@@ -204,16 +214,6 @@ h3 {
 
 ul,.sns_inne,.cell--table td,.plan,h3,.skills_content li,.work_inner,.title,.img_pc {
   text-align: center;
-}
-
-.d-start {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.d-center {
-  flex-wrap: nowrap;
-  justify-content: center;
 }
 
 .sns_inner li {
