@@ -22,16 +22,16 @@ i {
   flex-direction: row;
 }
 
-.d-between {
+.flex-content-between {
   justify-content: space-between;
 }
 
-.d-start {
+.flex-content-start {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.d-center {
+.flex-content-center {
   flex-wrap: nowrap;
   justify-content: center;
 }
@@ -263,7 +263,7 @@ ul,.sns_inne,.cell--table td,.plan,h3,.skills_content li,.work_inner,.title,.img
     padding: 50px 0;
   }
 
-  .d-start {
+  .flex-content-start {
     display: block;
   }
 
@@ -369,7 +369,7 @@ ul,.sns_inne,.cell--table td,.plan,h3,.skills_content li,.work_inner,.title,.img
     padding: 50px 0;
   }
 
-  .d-center {
+  .flex-content-center {
     display: block;
   }
 
