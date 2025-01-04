@@ -22,16 +22,16 @@ i {
   flex-direction: row;
 }
 
-.flex-content-between {
+.content_between {
   justify-content: space-between;
 }
 
-.flex-content-start {
+.content_start {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.flex-content-center {
+.content_center {
   flex-wrap: nowrap;
   justify-content: center;
 }
@@ -55,6 +55,7 @@ i {
 .inner {
   width: 1100px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .contact {
@@ -108,7 +109,7 @@ i {
   flex: 4;
 }
 
-div.inner img {
+.work_img {
   width: 250px;
 }
 
@@ -176,7 +177,7 @@ div.skills_inner img {
   margin-top: 50px;
 }
 
-.cell--table {
+.cell_table {
   table-layout: fixed;
 }
 
@@ -184,18 +185,18 @@ th[scope='col'] {
   background-color: #6ba7eb;
 }
 
-.cell--table th:not(:first-child), .cell--table td:not(:first-child) {
+.cell_table th:not(:first-child), .cell_table td:not(:first-child) {
   border-left: 2px solid #fff;
   padding: 10px;
   font-size: 16px;
   line-height: 26px;
 }
 
-.cell--table tr {
+.cell_table tr {
   background: #f9f9f9;
 }
 
-.cell--table tr:nth-child(even) {
+.cell_table tr:nth-child(even) {
   background: #e0efff;
 }
 
@@ -210,10 +211,6 @@ h3 {
 
 .sns, .sns_inner li {
   background: #e3f2fd;
-}
-
-ul,.sns_inne,.cell--table td,.plan,h3,.skills_content li,.work_inner,.title,.img_pc {
-  text-align: center;
 }
 
 .sns_inner li {
@@ -241,7 +238,7 @@ ul,.sns_inne,.cell--table td,.plan,h3,.skills_content li,.work_inner,.title,.img
   letter-spacing: 0.5px;
 }
 
-.header,.footer,.cell--table,.background_image {
+.header,.footer,.cell_table,.background_image {
   width: 100%;
 }
 
@@ -263,7 +260,7 @@ ul,.sns_inne,.cell--table td,.plan,h3,.skills_content li,.work_inner,.title,.img
     padding: 50px 0;
   }
 
-  .flex-content-start {
+  .content_start {
     display: block;
   }
 
@@ -352,12 +349,12 @@ ul,.sns_inne,.cell--table td,.plan,h3,.skills_content li,.work_inner,.title,.img
     font-size: clamp(0px, 40 / 1100 * 100vw, 30px);
   }
 
-  .cell--table th:not(:first-child), .cell--table th:first-child {
+  .cell_table th:not(:first-child), .cell_table th:first-child {
     font-size: 14px;
     line-height: 22px;
   }
 
-  .cell--table td:not(:first-child) {
+  .cell_table td:not(:first-child) {
     font-size: 12px;
   }
 
@@ -369,7 +366,7 @@ ul,.sns_inne,.cell--table td,.plan,h3,.skills_content li,.work_inner,.title,.img
     padding: 50px 0;
   }
 
-  .flex-content-center {
+  .content_center {
     display: block;
   }
 
